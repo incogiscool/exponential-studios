@@ -5,7 +5,7 @@ import { InlineWidget } from "react-calendly";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Offer from "../components/Offer";
-import frontPhoto from "../public/Untitled.png";
+import frontPhoto from "../public/sitePic2ndRev.png";
 
 const Home: NextPage = () => {
   return (
@@ -22,10 +22,10 @@ const Home: NextPage = () => {
       <section className="items-center sm:mr-32 sm:ml-32 mt-32 flex sm:text-left text-center">
         <div>
           <h1 className="font-bold sm:text-5xl sm:max-w-2xl text-3xl">
-            Reach <span className="text-cyan-400">exponential growth</span>,
+            Reach <span className="text-rose-500">exponential growth</span>,
             without needing to touch your ads manager.
           </h1>
-          <p className="mt-6 max-w-2xl text-slate-300">
+          <p className="mt-6 max-w-2xl font-medium text-slate-100">
             We can manage everything for you, from creatives, to social media
             and advertisement management. Just sit back, relax and watch the
             numbers roll in.
@@ -129,7 +129,7 @@ const Home: NextPage = () => {
       <section className="m-5">
         <div className="m-24">
           <h1 className="sm:text-5xl text-4xl font-bold text-center">
-            <span className="text-cyan-400">Book a call</span> with us
+            <span className="text-rose-500">Book a call</span> with us
           </h1>
           <div className="flex text-center justify-center m-24">
             <div className="m-5">
