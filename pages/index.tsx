@@ -1,15 +1,16 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import { InlineWidget } from "react-calendly";
+import { InlineWidget, PopupWidget } from "react-calendly";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Offer from "../components/Offer";
 import frontPhoto from "../public/sitePic2ndRev.png";
 
 const Home: NextPage = () => {
+  const calendlyURL = "https://calendly.com/exponentialstudios/initial-call";
   return (
-    <div className="">
+    <div>
       <Head>
         <title>Exponential Studios</title>
         <meta
@@ -20,7 +21,7 @@ const Home: NextPage = () => {
       </Head>
       <Navbar />
       <div>
-        <section className="items-center sm:mr-32 sm:ml-32 mt-32 flex sm:text-left text-center">
+        <section className="items-center sm:mr-32 sm:ml-32 mt-32 flex justify-center xl:text-left text-center">
           <div>
             <h1 className="font-bold sm:text-5xl sm:max-w-2xl text-3xl">
               Reach <span className="text-rose-500">exponential growth</span>,
@@ -132,15 +133,15 @@ const Home: NextPage = () => {
             <h1 className="sm:text-5xl text-3xl font-bold text-center">
               <span className="text-rose-500">Book a call</span> with us
             </h1>
-            <div className="flex text-center justify-center m-24">
-              <div className="m-5">
+            <div className="flex text-center justify-center mt-24">
+              <div className="m-5 sm:w-[500px]">
                 <InlineWidget
                   styles={{
+                    minWidth: "350px",
                     maxWidth: "500px",
-                    minWidth: "450px",
                     height: "650px",
                   }}
-                  url="https://calendly.com/exponentialstudios/initial-call"
+                  url={calendlyURL}
                 />
               </div>
               <div className="m-5 hidden xl:block">
