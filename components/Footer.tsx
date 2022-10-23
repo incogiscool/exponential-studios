@@ -5,7 +5,7 @@ const Footer = () => {
       <div className="h-24 items-center text-center">
         <div>
           <div className="flex justify-center">
-            <a href="">
+            <a href="https://www.instagram.com/exponential.studios">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
